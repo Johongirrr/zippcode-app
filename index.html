@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Zippcode app</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container  text-white">
+		<div class="jumbotron bg-primary ">
+			<h1>Enter zippcode and country code</h1>
+			<p>Enter zippcode and country code to get the longitude place names and latitude</p>
+			<h4>Visit to allowed countries list in <a class="text-danger" href="http://api.zippopotam.us">Read</a></h4>
+
+			<form id="submitForm">
+				<div class="form-group"> 
+				    <input type="text" placeholder="Enter zippcode" class="form-control form-control-lg mb-3" id="zippCode" required>
+				    <input type="text" placeholder="Enter country code" class="form-control form-control-lg" id="countryCode" required>
+				    <button   class="btn btn-block btn-warning mt-4" value="Submit">Submit</button>
+				</div>
+			</form>
+		</div>
+		<div id="output"></div>
+	</div>
+
+
+	<script src="zippcode_app.js"></script>
+</body>
+</html>
